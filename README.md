@@ -18,5 +18,5 @@ Where the values correspond as follows:
 
 # Program Info
 * Python 3
-* If you should like to use Python 2, change the input function from raw_input to input and execute program.
+* Python 2: In main, change the input function from input to raw_input and execute program.
 * Data Structures: Lists and Dictionaries
