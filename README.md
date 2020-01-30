@@ -5,15 +5,13 @@ This program provides the results of a statistical analysis that calculates how 
 # Info
 This program utalizes a table of character frequencies for every letter of the English alphabet. Different tables have different frequencies. As such, answers will vary depending on the frequencies used. 
 
+Note: The algorithm below does not consider spaces as charachters. It only considers characters in the alphabet. 
+
 # Algorithm
 φ(i)=∑_(i=0)^25▒〖f(c)p(c-i)〗
 
 Where the values correspond as follows: 
 * f(c): Represents the number of occurences of a charachter in the encrypted string divided by the length of the encrypted string.
-** f(c)=  (number of times character appears in encrypted string)/(length of encrypted string)
-* φ(i): For each value i such that 0 ≤ i ≤ 25, let φ(i)
-For all values of i such that 0 ≤ i ≤ 25, find  
-For every character in encrypted string, 
-
-
-
+* p(c-i): Represents, for each value of i such that 0 ≤ i ≤ 25, subtract i from the current location of the charachter in the alphabet. Once a new charachter has been found, find the corresponding charachter frequency.
+* Let z = f(c)p(c-i) such that every character in our encrypted string has it's own corresponding z value.
+* φ(i): For each value i such that 0 ≤ i ≤ 25, let φ(i) be the summation of every z value for a given i. 
