@@ -9,4 +9,7 @@ This program utalizes a table of character frequencies for every letter of the E
 phi(x) = sigma(0<=c<=25)f(c)p(c-i)
 φ(i)=∑_(i=0)^25▒〖f(c)p(c-i)〗
 
+𝜑𝑖= 𝛴 0<𝑐<25 𝑓𝑐𝑝(𝑐−𝑖)
+
+
 
