@@ -15,3 +15,8 @@ Where the values correspond as follows:
 * p(c-i): Represents, for each value of i such that 0 ≤ i ≤ 25, subtract i from the current location of the character, c, in the alphabet. Once a new character has been found, find the corresponding character frequency.
 * Let z = f(c)p(c-i) such that every distinct character in our encrypted string has its own corresponding z value.
 * φ(i): For each value i such that 0 ≤ i ≤ 25, let φ(i) be the summation of every z value for a given i. 
+
+# Program Info
+* Python 3
+* If you should like to use Python 2, change the input function from raw_input to input and execute program.
+* Data Structures: Lists and Dictionaries
