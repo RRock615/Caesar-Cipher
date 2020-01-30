@@ -7,5 +7,6 @@ This program utalizes a table of character frequencies for every letter of the E
 
 # Algorithm
 phi(x) = sigma(0<=c<=25)f(c)p(c-i)
+φ(i)=∑_(i=0)^25▒〖f(c)p(c-i)〗
 
 
