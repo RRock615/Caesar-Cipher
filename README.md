@@ -4,4 +4,4 @@ This program provides the results of a statistical analysis that analyzes how li
 
 This program utalizes a table of character frequencies for every letter of the English alphabet. 
 
-#Code Info
+# Code Info
