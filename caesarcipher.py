@@ -80,29 +80,33 @@ def c_frequency(cipher):
         char_dictionary.update({key : count})
     return char_dictionary
 
+def main():
+	freq = []
+	results = []
+
+	print("Cryptanalysis of Caesar Cipher")
+	print("---------------------------------------------")
+	print("This program will give you the statistical analysis for every value i in phi_i")
+	print("---------------------------------------------")
+	cipher = input("Please enter your string: ") 
+	print("")
+	cipher = cipher.lower()
+	cipher = cipher.replace(' ','')
+	length = len(cipher)
+	cDict = c_frequency(cipher)
+	for i in range(0,26):
+	    for c in cDict:
+	        freq.append(cipher_calc(c,cDict,length,i))
+	    results.append(sum(freq))
+	    del freq[:]
+	print("i |","phi_i")
+	print("_________")
+	for j in range(0,26):
+	    print(j,"|",round(results[j],3))
+
 
 if __name__ == "__main__":
-    freq = []
-    results = []
+	main()
 
-    print("Cryptanalysis of Caesar Cipher")
-    print("---------------------------------------------")
-    print("This program will give you the statistical analysis for every value i in phi_i")
-    print("---------------------------------------------")
-    cipher = input("Please enter your string: ") 
-    print("")
-    cipher = cipher.lower()
-    cipher = cipher.replace(' ','')
-    length = len(cipher)
-    cDict = c_frequency(cipher)
-    for i in range(0,26):
-        for c in cDict:
-            freq.append(cipher_calc(c,cDict,length,i))
-        results.append(sum(freq))
-        del freq[:]
-    print("i |","phi_i")
-    print("_________")
-    for j in range(0,26):
-        print(j,"|",round(results[j],3))
 
 
